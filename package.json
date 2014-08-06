@@ -1,0 +1,23 @@
+{
+  "name": "X-Precise",
+  "description": "X-Precise is a simple yet effective method to achieve pixel precise results in your PSD to HTML projects",
+  "version": "2.3",
+  "repository": {
+    "type": "git",
+    "url": "xhtmlized/x-precise"
+  },
+  "author": {
+    "name": "XHTMLized",
+    "email": "hello@xhtmlized.com",
+    "url": "https://github.com/xhtmlized"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-uglify": "^0.4.0",
+    "jit-grunt": "^0.3.2",
+    "time-grunt": "^0.3.1"
+  }
+}

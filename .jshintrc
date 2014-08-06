@@ -1,0 +1,13 @@
+{
+  "strict": true,
+  "browser": true,
+  "jquery": true,
+  "indent": 2,
+  "trailing": true,
+  "unused": true,
+  "undef": true,
+  "curly": true,
+  "globals": {
+    "console": true
+  }
+}
