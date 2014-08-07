@@ -227,7 +227,6 @@
         slide: function(event, ui) {
           page_value.text(ui.value);
           page.css('opacity', ui.value/100);
-          console.log(page);
         },
         stop: function() {
           XPrecise.saveSettings();
