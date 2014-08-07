@@ -220,13 +220,14 @@
       var page_value = $("#xprecise-page-opacity-value");
       var page_opacity = page_value.text() * 1;
 
-      page.fadeTo({speed: 1, opacity: page_opacity/100, bgColor: 'transparent'});
+      page.css('opacity', page_opacity/100);
 
       $("#xprecise-page-opacity").slider({
         value: page_opacity,
         slide: function(event, ui) {
           page_value.text(ui.value);
-          page.fadeTo({speed: 1, opacity: ui.value/100, bgColor: 'transparent'});
+          page.css('opacity', ui.value/100);
+          console.log(page);
         },
         stop: function() {
           XPrecise.saveSettings();
