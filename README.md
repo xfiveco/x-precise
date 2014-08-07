@@ -7,13 +7,18 @@ X-Precise is a simple yet effective method to achieve pixel precise results in y
 
 ## Demo
 
-Check live X-Precise demo [here](http://xhtmlized.github.io/x-precise/).
+Check X-Precise demo [here](http://xhtmlized.github.io/x-precise/).
 
 ## Installation
 
-X-Precise interface is initialized by attaching http://xhtmlized.github.io/x-precise/xprecise.min.js to the page. X-Precise requires jQuery to run, other libraries are packed in `xprecise.min.js`.
+X-Precise requires jQuery to run. Download [xprecise.min.js](xprecise.min.js) and attach it to the page.
 
-The latest version of X-Precise is linked in [XH Generator](https://github.com/xhtmlized/generator-xh).
+```
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="xprecise.min.js"></script>
+```
+
+The latest version of X-Precise is also linked in [XH Generator](https://github.com/xhtmlized/generator-xh).
 
 ## Bookmarklet version
 
