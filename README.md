@@ -3,14 +3,11 @@ X-Precise
 
 X-Precise is a simple yet effective method to achieve pixel precise results in your PSD to HTML projects. By overlaying or underlaying a developed page with a semi-transparent image of the original design you can immediately see and repair any differences from the client’s design. Using X-Precise as a method to ensure quality will save you both time and money, and your customers will be happier for it, too!
 
-## Goals of the project
-
-- to reduce the number of adjustments after delivering projects to clients
-- to get more „Looks great“ from your customers
+![X-Precise](img/preview.jpg)
 
 ## Demo
 
-Check live X-Precise demo here.
+Check live X-Precise demo [here](http://xhtmlized.github.io/x-precise/).
 
 ## Installation
 
@@ -30,13 +27,13 @@ Or the version without adding jQuery if that's already added to the page:
 
 ```
 javascript:function%20loadScript(scriptURL)%20{%20var%20scriptElem%20=%20document.createElement('SCRIPT');%20scriptElem.setAttribute('src',%20scriptURL);%20document.body.appendChild(scriptElem);}loadScript('http://xhtmlized.github.io/x-precise/xprecise.min.js');
-
 ```
+
 Please be aware that when using the bookmarklet X-Precise has to be re-initialized after page reloads so the usage of bookmarklet is more suitable for QA and quick tests than development.
 
 ## Overlay images
 
-Create overlay images for pages you are coding. Grayscale images are recommended to see the differences better. Use JPG for the overlay and save it with the same name as the page your are working on to X-Precise folder `/_xprecise/`. X-Precise will automatically try to load a JPG with the same name as the page has (`index.html` -> `index.jpg`) from this folder. Of course you can load an image with different name, too. Just be sure to change the path in X-Precise interface.
+Create overlay images for pages you are coding. Grayscale images are recommended to see the differences better. Use JPG for the overlay and save it with the same name as the page your are working on to X-Precise folder `/xprecise`. X-Precise will automatically try to load a JPG with the same name as the page has (`index.html` -> `index.jpg`) from this folder. Of course you can load an image with different name, too. Just be sure to change the path in X-Precise interface.
 
 ## Usage
 

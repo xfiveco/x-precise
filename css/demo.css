@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 24px/1.25 Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+.container {
+  margin: 60px auto 0 auto;
+  padding: 24px 20px 30px 20px;
+  width: 800px;
+  border-radius: 10px;
+  background: #f6f6f6;
+}
+
+.heading {
+  margin: 0 0 28px 0;
+  font: 60px/1.0 "Lobster", cursive;
+  color: #ef4c23;
+}
+
+p {
+  margin: 0 0 30px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 25px;
+  border-radius: 10px;
+  color: #fff;
+  background: #ef4c23;
+  font: 30px/1.0 "Lobster", cursive;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #999;
+}
+
+.text-center {
+  text-align: center;
+}

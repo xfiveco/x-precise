@@ -356,9 +356,9 @@
       var url_parts = location.pathname.split('/');
       url_parts.reverse();
       if (url_parts[0] !== '') {
-        image_name = '_xprecise/' + url_parts[0].replace(/(.html|.php)/, '.jpg');
+        image_name = 'xprecise/' + url_parts[0].replace(/(.html|.php)/, '.jpg');
       } else {
-        image_name = '_xprecise/index.jpg';
+        image_name = 'xprecise/index.jpg';
       }
 
       return image_name;
@@ -397,15 +397,15 @@
 
       // Store settings in string separated by delimiter
       var xprecise_settings = interface_toggle + delimiter +
-                  interface_position.top + delimiter +
-                  interface_position.left + delimiter +
-                  overlay_toggle + delimiter +
-                  $("#xprecise-image").val() + delimiter +
-                  $("#xprecise-top").val() + delimiter +
-                  $("#xprecise-left").val() + delimiter +
-                  $("#xprecise-opacity-value").text() + delimiter +
-                  $("#xprecise-page-opacity-value").text() + delimiter +
-                  over_under;
+        interface_position.top + delimiter +
+        interface_position.left + delimiter +
+        overlay_toggle + delimiter +
+        $("#xprecise-image").val() + delimiter +
+        $("#xprecise-top").val() + delimiter +
+        $("#xprecise-left").val() + delimiter +
+        $("#xprecise-opacity-value").text() + delimiter +
+        $("#xprecise-page-opacity-value").text() + delimiter +
+        over_under;
       var cookie_info = XPrecise.getCookieInfo();
       $.cookie(cookie_info.cookie_name, xprecise_settings, { path: cookie_info.cookie_path, expires: 365 });
     },
@@ -419,7 +419,7 @@
       var path_parts = location.pathname.split('/');
       var file_name = path_parts.pop();
       cookie_info.cookie_path = path_parts.join('/') + '/';
-      cookie_info.cookie_name = '_xprecise_' + file_name;
+      cookie_info.cookie_name = 'xprecise_' + file_name;
       return cookie_info;
     },
 
@@ -469,11 +469,9 @@
       img_check.send();
 
       this.onerror = function () {
-        // console.log('zzz');
       };
 
       if (img_check.status == 404 && image_path.match(/.jpg/)) {
-        // console.log('JPG image doesn\'t exist, looking for PNG');
         var img_png_path = image_path.replace(/.jpg/, '.png');
         var img_check_png = new XMLHttpRequest();
         img_check_png.open('HEAD', img_png_path, false);
