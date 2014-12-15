@@ -356,9 +356,9 @@
       var url_parts = location.pathname.split('/');
       url_parts.reverse();
       if (url_parts[0] !== '') {
-        image_name = 'xprecise/' + url_parts[0].replace(/(.html|.php)/, '.jpg');
+        image_name = 'designs/' + url_parts[0].replace(/(.html|.php)/, '.jpg');
       } else {
-        image_name = 'xprecise/index.jpg';
+        image_name = 'designs/index.jpg';
       }
 
       return image_name;
