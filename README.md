@@ -1,13 +1,13 @@
 X-Precise
 =========
 
-X-Precise is a simple yet effective method to achieve pixel precise results in your PSD to HTML projects. By overlaying or underlaying a developed page with a semi-transparent image of the original design you can immediately see and repair any differences from the client’s design. Using X-Precise as a method to ensure quality will save you both time and money, and your customers will be happier for it, too!
+X-Precise is a simple yet effective method to achieve pixel precise results in your design to HTML projects. By overlaying or underlaying a developed page with a semi-transparent image of the original design you can immediately see and repair any differences from the client’s design. Using X-Precise as a method to ensure quality will save you both time and money, and your customers will be happier for it, too!
 
 ![X-Precise](img/preview.jpg)
 
 ## Demo
 
-Check X-Precise demo [here](http://xhtmlized.github.io/x-precise/).
+Check X-Precise demo [here](http://xfive.github.io/x-precise/).
 
 ## Installation
 
@@ -18,20 +18,20 @@ X-Precise requires jQuery to run. Download [xprecise.min.js](xprecise.min.js) an
 <script src="xprecise.min.js"></script>
 ```
 
-The latest version of X-Precise is also linked in [XH Generator](https://github.com/xhtmlized/generator-xh).
+The latest version of X-Precise is also linked in [XH Generator](https://github.com/xfive/generator-xh).
 
 ## Bookmarklet version
 
 You can also use the bookmarklet version of X-Precise without having to attach it directly to a page. Use the following bookmarklet.
 
 ```
-javascript:function%20loadScript(scriptURL)%20{%20var%20scriptElem%20=%20document.createElement('SCRIPT');%20scriptElem.setAttribute('src',%20scriptURL);%20document.body.appendChild(scriptElem);}loadScript('http://code.jquery.com/jquery-1.11.1.min.js');loadScript('http://xhtmlized.github.io/x-precise/xprecise.min.js');
+javascript:function%20loadScript(scriptURL)%20{%20var%20scriptElem%20=%20document.createElement('SCRIPT');%20scriptElem.setAttribute('src',%20scriptURL);%20document.body.appendChild(scriptElem);}loadScript('http://code.jquery.com/jquery-1.11.1.min.js');loadScript('http://xfive.github.io/x-precise/xprecise.min.js');
 ```
 
 Or the version without adding jQuery if that's already added to the page:
 
 ```
-javascript:function%20loadScript(scriptURL)%20{%20var%20scriptElem%20=%20document.createElement('SCRIPT');%20scriptElem.setAttribute('src',%20scriptURL);%20document.body.appendChild(scriptElem);}loadScript('http://xhtmlized.github.io/x-precise/xprecise.min.js');
+javascript:function%20loadScript(scriptURL)%20{%20var%20scriptElem%20=%20document.createElement('SCRIPT');%20scriptElem.setAttribute('src',%20scriptURL);%20document.body.appendChild(scriptElem);}loadScript('http://xfive.github.io/x-precise/xprecise.min.js');
 ```
 
 Please be aware that when using the bookmarklet X-Precise has to be re-initialized after page reloads so the usage of bookmarklet is more suitable for QA and quick tests than development.
